@@ -21,7 +21,7 @@ function Drop(word) {
       counter++;
       this.y = random(-200, -100);
       this.yspeed = map(this.z, 0, 20, 4, 10);
-      this.word = words[counter];
+      this.word = words[counter%words.length];
     }
   }
 
